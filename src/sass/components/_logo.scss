@@ -1,0 +1,31 @@
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.logobox {
+  @include logo(flex);
+  position: absolute;
+  top: 10.6rem;
+  left: 20rem;
+
+  @include respond(xxl) {
+    left: 10rem;
+  }
+  @include respond(xl) {
+    left: 5rem;
+  }
+}
+
+.logobox-gen {
+  @include logo(flex);
+}
+
+.logobox-ext {
+  @include logo(none);
+
+  @include respond(lg) {
+    display: flex;
+    margin-bottom: 10rem;
+  }
+}

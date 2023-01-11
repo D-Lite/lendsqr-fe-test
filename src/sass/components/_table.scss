@@ -1,0 +1,67 @@
+.usertable {
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 6rem;
+  padding: 2rem 3rem;
+  border-collapse: collapse;
+
+  & th {
+    padding: 2rem;
+
+    @include respond(xl) {
+      white-space: nowrap;
+    }
+
+    & div {
+      display: flex;
+      align-items: center;
+
+      & h3 {
+        color: #545f7d;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        font-family: "Work Sans", sans-serif;
+        text-transform: uppercase;
+        margin-right: 1rem;
+        font-weight: 600;
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  & td {
+    color: #545f7d;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-family: "Work Sans", sans-serif;
+    text-transform: capitalize;
+    @include respond(xl) {
+      white-space: nowrap;
+    }
+  }
+
+  &__dropdown {
+    cursor: pointer;
+  }
+
+  & tbody {
+    & tr {
+      // background-color: #545f7d;
+      cursor: pointer;
+    }
+    & td {
+      padding: 2rem;
+      border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+      & img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.table__box {
+  overflow-x: auto;
+}

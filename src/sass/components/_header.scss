@@ -1,0 +1,198 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  background-color: #fff;
+  @include respond(md) {
+    padding: 2rem 1rem;
+  }
+  @include respond(sm) {
+    padding: 2rem 0rem;
+  }
+
+  & .headerbox-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3rem;
+    @include respond(sm) {
+      margin-left: 1rem;
+    }
+
+    & div:last-of-type {
+      border-radius: 8px;
+      width: 40rem;
+      border: 1px solid rgba(#213f7d, 0.2);
+      overflow: hidden;
+
+      @include respond(md) {
+        width: auto;
+      }
+
+      & input {
+        width: 35.8rem;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        border-radius: 8px;
+        border: none;
+        @include respond(md) {
+          width: auto;
+          display: none;
+        }
+
+        &::placeholder {
+          color: #545f7d;
+          font-size: 1.4rem;
+          font-family: "Work Sans", sans-serif;
+          line-height: 1.6rem;
+          opacity: 0.7;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      & button {
+        cursor: pointer;
+        background-color: #39cdcc;
+        border: none;
+        width: 4rem;
+        padding: 1rem;
+        transition: all 0.3s;
+
+        @include respond(sm) {
+          padding: 5px;
+          width: 3rem;
+        }
+
+        &:hover {
+          background-color: #327e7e;
+        }
+      }
+    }
+  }
+  & .headerbox-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30rem;
+    margin-right: 4rem;
+    @include respond(sm) {
+      margin-right: 3rem;
+      width: 25rem;
+    }
+
+    @include respond(xsm) {
+      margin-right: 2rem;
+      width: 20rem;
+    }
+
+    & p {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      @include respond(xsm) {
+        font-size: 1.2rem;
+      }
+    }
+
+    & a {
+      &:link,
+      &:visited {
+        color: #213f7d;
+        line-height: 1.9rem;
+        font-size: 1.6rem;
+        font-family: "Roboto", sans-serif;
+        transition: all 0.3s;
+        @include respond(xsm) {
+          font-size: 1.2rem;
+        }
+      }
+
+      &:hover,
+      &:active {
+        color: #658acf;
+      }
+    }
+
+    & img {
+      cursor: pointer;
+      @include respond(xsm) {
+        width: 1.5rem;
+        margin: 0 2px;
+      }
+    }
+
+    & .user {
+      border-radius: 10rem;
+      @include respond(xsm) {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.mb-drawer {
+  display: none;
+  font-size: 3rem;
+  cursor: pointer;
+  @include respond(xl) {
+    display: block;
+  }
+}
+
+.popup_overlay {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  overflow-y: auto;
+  transition: all 0.3s;
+}
+
+.search__popup {
+  position: fixed;
+  // border: 1px solid red;
+  width: 100%;
+  z-index: 20;
+  height: 7rem;
+  top: 0;
+  background-color: #fff;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  transition: all 0.3s;
+
+  & input {
+    width: 80%;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(#213f7d, 0.2);
+
+    &::placeholder {
+      color: #545f7d;
+      font-size: 1.4rem;
+      font-family: "Work Sans", sans-serif;
+      line-height: 1.6rem;
+      opacity: 0.7;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .close-icon {
+    font-size: 3rem;
+  }
+}

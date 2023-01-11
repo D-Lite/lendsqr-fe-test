@@ -1,0 +1,136 @@
+.filter__box {
+  // border: 1px solid red !important;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  bottom: 100%;
+  left: 1%;
+  height: 60rem;
+  width: 27rem;
+  padding: 4rem 2rem;
+
+  & .div {
+    margin-bottom: 2rem;
+  }
+
+  & label {
+    display: block;
+    font-weight: 500;
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+    font-family: "Work Sans", sans-serif;
+    color: #545f7d;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  & select {
+    width: 23rem;
+    border: 1px solid #213f7d;
+    opacity: 0.2;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & input {
+    width: 23rem;
+    border: 1px solid #213f7d;
+    opacity: 0.2;
+    border-radius: 8px;
+    padding: 1rem;
+    &::placeholder {
+      color: #545f7d;
+      opacity: 0.7;
+    }
+  }
+}
+
+.react-datepicker-wrapper {
+  width: auto !important;
+  @include respond(sm) {
+    width: 100% !important;
+  }
+}
+.react-datepicker__input-container {
+  @include respond(sm) {
+    width: 100% !important;
+  }
+}
+.react-datepicker__input-container input {
+  //   background-color: $form-color !important;
+  width: 23rem !important;
+  border-radius: 8px;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+  @include respond(sm) {
+    width: 100% !important;
+  }
+}
+.calendar {
+  position: absolute;
+  top: 54%;
+  right: 4%;
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+
+  @include respond(sm) {
+    // display: none;
+  }
+  &_test {
+    position: relative;
+    @include respond(sm) {
+      width: 80%;
+    }
+  }
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  color: #545f7d;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.filter__btncontainer {
+  //   border: 1px solid red;
+  display: flex;
+  align-items: center;
+  & button {
+    width: 9.8rem;
+    text-transform: capitalize;
+    padding: 1rem 0.5rem;
+    font-family: "Work Sans", sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  & .reset {
+    margin-right: 1rem;
+    background-color: #39cdcc;
+    border: 1px solid #545f7d;
+    background-color: #ffffff;
+  }
+  & .filter {
+    margin-right: 1rem;
+    background-color: #39cdcc;
+    color: #ffffff;
+    border: 1px solid #39cdcc;
+  }
+}

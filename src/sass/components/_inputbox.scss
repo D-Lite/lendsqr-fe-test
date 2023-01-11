@@ -1,0 +1,19 @@
+.input__box {
+  padding: 1rem;
+  border: 2px solid rgba(84, 95, 125, $alpha: 0.1);
+  margin-top: 2rem;
+  border-radius: 5px;
+  color: #545f7d;
+  font-size: 1.4rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #545f7d;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,24 @@
+// abstract folder
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+// base folder
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// components folder
+@import "components/logo";
+@import "components/inputbox";
+@import "components/header";
+@import "components/infocard";
+@import "components/table";
+@import "components/statuscard";
+@import "components/filter";
+
+// page folder
+@import "pages/login";
+@import "pages/home";
+@import "pages/user";

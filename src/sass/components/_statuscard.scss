@@ -1,0 +1,46 @@
+.status__inactive {
+  background: rgba(#545f7d, 0.06);
+  border-radius: 10rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  width: 12rem;
+}
+
+.status__pending {
+  background: rgba(#e9b200, 0.1);
+  border-radius: 10rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  color: #e9b200;
+  width: 12rem;
+}
+
+.status__active {
+  background: rgba(#39cd62, 0.06);
+  border-radius: 10rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  color: #39cd62;
+  width: 12rem;
+}
+
+.status__blacklisted {
+  background: rgba(#e4033b, 0.1);
+  border-radius: 10rem;
+  padding: 1rem 0;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  color: #e4033b;
+}
