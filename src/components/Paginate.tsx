@@ -9,7 +9,7 @@ const Paginate = ({
   getCurrentItems: Function;
 }) => {
   const data = items.slice(0, 10);
-  console.log(data);
+  
   const [currentItems, setCurrentItems] = useState(data);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(10);

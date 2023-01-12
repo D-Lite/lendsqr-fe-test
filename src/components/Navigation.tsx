@@ -30,14 +30,15 @@ import { Ctx } from "../contexts/globalContext";
 // /////////-----------------------------
 
 const Navigation = ({ navIsVisible }: { navIsVisible: boolean }) => {
-  const { logout } = Ctx();
+  // const { logout } = Ctx();
   return (
     <nav
       className="dashboard__nav"
       style={navIsVisible ? { width: "30rem" } : { display: "" }}
+      data-testid="sidebar"
     >
       <div className="dashboard__nav--box1">
-        <Logo logo={logo} name={name} className="logobox-gen" />
+        <Logo logo={logo} name={name} className="logobox-gen" data-testid="sidebar-logo" />
       </div>
 
       <div className="dashboard__dropdown">
@@ -84,7 +85,7 @@ const Navigation = ({ navIsVisible }: { navIsVisible: boolean }) => {
       </ul>
       <ul className="dashboard__navbox">
         {/* <h3>settings </h3> */}
-        <Navlink icon={badgepercent} text="logout" handleLogout={logout} />
+        {/* <Navlink icon={badgepercent} text="logout" handleLogout={logout} /> */}
       </ul>
     </nav>
   );

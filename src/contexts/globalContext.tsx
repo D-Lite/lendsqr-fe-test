@@ -25,5 +25,7 @@ const GlobalContexts = ({ children }: any) => {
   );
 };
 
+export { GlobalContexts };
+
+
 export const Ctx = () => useContext(context);
-export default GlobalContexts;

@@ -12,7 +12,7 @@ const Table = ({ data }: { data: [] }) => {
   const getCurrentItems = useCallback((items: any) => {
     setPaginatedData(items);
   }, []);
-  console.log(paginatedData);
+  
   const getFilteredData = (data: []) => {
     setPaginatedData(data);
   };
