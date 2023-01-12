@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const context = React.createContext<any>(null!);
+export const context = React.createContext<any>(null!);
 
-const GlobalContexts = ({ children }: any) => {
+const GlobalProvider = ({ children }: any) => {
   const navigate = useNavigate();
 
   const [user, setUser] = useState(
@@ -25,7 +25,7 @@ const GlobalContexts = ({ children }: any) => {
   );
 };
 
-export { GlobalContexts };
+export { GlobalProvider };
 
 
 export const Ctx = () => useContext(context);

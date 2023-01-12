@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { GlobalContexts } from "./contexts/globalContext";
+import { GlobalProvider } from "./contexts/globalContext";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import UserDetails from "./pages/UserDetails";
@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <Router>
-      <GlobalContexts>
+      <GlobalProvider>
         <ToastContainer className="toast" />
         <div>
           <Routes>
@@ -17,7 +17,7 @@ function App() {
             <Route path="/userdetails/:id" element={<UserDetails />} />
           </Routes>
         </div>
-      </GlobalContexts>
+      </GlobalProvider>
     </Router>
   );
 }

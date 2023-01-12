@@ -76,6 +76,7 @@ const Table = ({ data }: { data: [] }) => {
                     key={id}
                     onClick={routeToUserPage}
                     id="href"
+                    data-testid="userSinglePage"
                   >
                     <td>{orgName}</td>
                     <td>{userName}</td>

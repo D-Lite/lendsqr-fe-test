@@ -30,7 +30,8 @@ import { Ctx } from "../contexts/globalContext";
 // /////////-----------------------------
 
 const Navigation = ({ navIsVisible }: { navIsVisible: boolean }) => {
-  // const { logout } = Ctx();
+const { logout } = Ctx();
+
   return (
     <nav
       className="dashboard__nav"
@@ -84,8 +85,8 @@ const Navigation = ({ navIsVisible }: { navIsVisible: boolean }) => {
         <Navlink icon={clipboard} text="audit logs" />
       </ul>
       <ul className="dashboard__navbox">
-        {/* <h3>settings </h3> */}
-        {/* <Navlink icon={badgepercent} text="logout" handleLogout={logout} /> */}
+        <h3>settings </h3>
+        <Navlink icon={badgepercent} text="logout" handleLogout={logout} />
       </ul>
     </nav>
   );
